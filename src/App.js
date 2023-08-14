@@ -223,8 +223,8 @@ const aoNovoColaboradorAdicionado = (colaborador) => {
   setColaboradores([...colaboradores, colaborador]); //cria um novo array, espalha os antigos e coloca o novo no final
 }
 
-function deletarColaborador() {
-  console.log('deletando colaborador');
+function deletarColaborador(id) {
+  setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id))
 }
 
 function mudarCorDoTime(cor, id) {

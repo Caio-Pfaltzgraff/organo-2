@@ -10,8 +10,16 @@ const css = { backgroundColor: hexToRgba(props.cor, '0.6'), backgroundImage: 'ur
             <input onChange={event => props.mudarCor(event.target.value, props.id)} value={props.cor} type='color' className='input-cor' />
             <h3 style={{borderColor : props.cor}}>{props.nome}</h3>
             <div className='colaboradores'>
-                {props.colaboradores.map(colaborador => {
-                    return <Colaborador corDeFundo={props.cor} key={colaborador.nome} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} aoDeletar={props.aoDeletar}/>
+                {props.colaboradores.map((colaborador, indice) => {
+                    return <Colaborador 
+                        corDeFundo={props.cor} 
+                        key={indice} 
+                        nome={colaborador.nome}
+                        cargo={colaborador.cargo} 
+                        imagem={colaborador.imagem} 
+                        aoDeletar={props.aoDeletar} 
+                        id={colaborador.id}
+                    />
                 })}
             </div>
         </section>
