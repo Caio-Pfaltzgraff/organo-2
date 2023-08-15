@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 .colaborador {
     position: relative;
     width: 280px;
@@ -24,9 +26,10 @@
 
 .colaborador .rodape h4 {
     color: #6278F7;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -35,12 +38,15 @@
     line-height: 22px;
     color: #212121;
     padding: 0 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .deletar {
     position: absolute;
     right: -10px;
     top: -10px;
+    cursor: pointer;
 }
 
 .favoritar {

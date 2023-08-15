@@ -282,9 +282,7 @@ function resolverFavorito(id) {
       {times.map((time, indice) => <Time 
         aoFavoritar={resolverFavorito}
         key={indice} 
-        nome={time.nome} 
-        cor={time.cor} 
-        id={time.id}
+        time={time}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
         aoDeletar={deletarColaborador}
         mudarCor={mudarCorDoTime}

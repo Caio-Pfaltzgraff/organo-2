@@ -1,5 +1,6 @@
 .footer {
     background-color: #6278F7;
+    background-image: url('/public/images/fundo.png');
     color: #FFF;
     padding: 80px;
     display: flex;
@@ -9,9 +10,14 @@
 
 .footer ul li {
     display: inline-block;
-    margin-right: 32px;
+    margin-right: 34px;
 }
 
 .footer ul li:last-child {
     margin-right: 0;
+}
+
+.footer ul li a img {
+    width: 32px;
+    height: 35px;
 }

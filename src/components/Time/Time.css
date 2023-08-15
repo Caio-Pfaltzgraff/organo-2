@@ -9,6 +9,8 @@
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
+    font-family: 'Prata';
+    font-weight: 400;
 }
 
 .time .colaboradores {
@@ -22,4 +24,5 @@
     position: absolute;
     top: 20px;
     right: 50px;
+    cursor: pointer;
 }
