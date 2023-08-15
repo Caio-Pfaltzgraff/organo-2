@@ -17,6 +17,8 @@ const css = { backgroundColor: hexToRgba(props.cor, '0.6'), backgroundImage: 'ur
                         nome={colaborador.nome}
                         cargo={colaborador.cargo} 
                         imagem={colaborador.imagem} 
+                        favorito={colaborador.favorito} 
+                        aoFavoritar={props.aoFavoritar}
                         aoDeletar={props.aoDeletar} 
                         id={colaborador.id}
                     />
